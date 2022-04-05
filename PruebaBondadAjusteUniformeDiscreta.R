@@ -12,8 +12,8 @@ if(!require('extraDistr')) {
   library('extraDistr')
 }
 H <-rdunif(tamano, 
-           10, #min
-           20) #max
+           1, #min
+           tamano) #max
 
 d <- (1.36)/sqrt(length(G))
 ks.test(G, H)    ## compara que tanto se parece
