@@ -9,7 +9,7 @@ tamano <- length(G)
 
 ## Generación de números pseudoaleatorios exponenciales
 H <-rexp(tamano,    # Número de observaciones aleatorias a ser generadas
-         1/1000) # La probabilidad de éxito
+         1/1000) # Valor de lambda
 
 
 d <- (1.36)/sqrt(length(G))

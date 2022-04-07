@@ -7,10 +7,10 @@ G <- x[,1] ## Una distribucion generada (los numeros que vienen de nuestro progr
 tamano <- length(G)
 
 
-## Generación de números pseudoaleatorios exponenciales
+## Generación de números pseudoaleatorios Lognormales
 H <-rlnorm(tamano,    # Número de observaciones aleatorias a ser generadas
-          meanlog=100, # Valor de la media a utilizar
-          sdlog=25.5) #Valor de la desviacion estandar a utilizar
+          meanlog=0.010, # Valor de la media a utilizar
+          sdlog=1) #Valor de la desviacion estandar a utilizar
 
 
 d <- (1.36)/sqrt(length(G))

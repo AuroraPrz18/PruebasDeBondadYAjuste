@@ -1,14 +1,14 @@
 library(readxl)
 x <- read.csv("D:/adria/ITSUR/Itsur 6to semestre/Simulacion/U3/Programa Simu/Archivos R/PruebasDeBondadYAjuste/geometrica.csv",
               header = FALSE,
-              sep = ",") 
+              sep = ",")
 
 G <- x[,1] ## Una distribucion generada (los numeros que vienen de nuestro programa), manda primera columna
 tamano <- length(G)
 
 ## Generación de números pseudoaleatorios geometricos
 H <-rgeom(tamano,    # Número de observaciones aleatorias a ser generadas
-           0.7) # La probabilidad de éxito
+           0.005) # La probabilidad de éxito
            
 d <- (1.36)/sqrt(length(G))
 ks.test(G, H)    ## compara que tanto se parece
