@@ -6,7 +6,7 @@ x <- read.csv("C:/Users/Aurora/Desktop/New folder (2)/Simulacion/final/PruebasBo
 
 G <- x[,1] ## Una distribucion generada (los numeros que vienen de nuestro programa), manda primera columna
 tamano <- length(G)
-## Generación de números pseudoaleatorios binomiales
+## GeneraciÃ³n de nÃºmeros pseudoaleatorios
 if(!require('extraDistr')) {
   install.packages('extraDistr')
   library('extraDistr')
@@ -43,8 +43,8 @@ qplot(H,
       alpha=I(.2))
 
 
-qqplot(G, H, main="Comparación de datos generados con datos hipotéticos",
-       xlab="Datos hipotéticos (G)",
+qqplot(G, H, main="ComparaciÃ³n de datos generados con datos hipotÃ©ticos",
+       xlab="Datos hipotÃ©ticos (G)",
        ylab = "Datos generados (H)",
        col=I("blue"))
 
