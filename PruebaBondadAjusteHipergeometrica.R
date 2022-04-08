@@ -7,8 +7,8 @@ x <- read.csv("C:/Users/Aurora/Desktop/New folder (2)/Simulacion/final/PruebasBo
 
 G <- x[,1] ## Una distribucion generada (los numeros que vienen de nuestro programa), manda primera columna
 tamano <- length(G)
-## Generación de números pseudoaleatorios binomiales
-H <-rhyper(tamano,    # Número de observaciones aleatorias a ser generadas
+## GeneraciÃ³n de nÃºmeros pseudoaleatorios
+H <-rhyper(tamano,    # NÃºmero de observaciones aleatorias a ser generadas
            7000, # the number of white balls in the urn.
            3000,     # the number of black balls in the urn.
            5000) # the number of balls drawn from the urn, hence must be in 0,1,., m+n.
@@ -42,8 +42,8 @@ qplot(H,
       alpha=I(.2))
 
 
-qqplot(G, H, main="Comparación de datos generados con datos hipotéticos",
-       xlab="Datos hipotéticos (G)",
+qqplot(G, H, main="ComparaciÃ³n de datos generados con datos hipotÃ©ticos",
+       xlab="Datos hipotÃ©ticos (G)",
        ylab = "Datos generados (H)",
        col=I("blue"))
 
